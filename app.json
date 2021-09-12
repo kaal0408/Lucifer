@@ -1,7 +1,7 @@
 {
- "name": "TeleBot - UserBot",
- "description": "An advanced Telethon Userbot, from @TeleBotSupport",
- "logo": "https://telegra.ph/file/0b1d5cb8deeec7a506154.jpg",
+ "name": "LuciferBot - UserBot",
+ "description": "An advanced Telethon Userbot, from @Lucifer_support_group",
+ "logo": "https://telegra.ph/file/73373552e9217e010e853.jpg",
  "keywords": [
   "telegram",
   "userbot",
@@ -9,9 +9,9 @@
   "modular",
   "productivity"
  ],
- "repository": "https://github.com/xditya/TeleBot/",
- "website": "https://xditya.gitbook.io/telebot/",
- "success_url": "https://t.me/TeleBotHelp/13",
+ "repository": "https://github.com/kaal0408/LuciferBot/",
+ "website": "https://github.com/kaal0408/LuciferBot/   ",
+ "success_url": "https://t.me/Lucifer_support_group",
  "stack": "container",
  "env": {
   "ENV": {
@@ -20,7 +20,7 @@
   },
   "TEMP_DOWNLOAD_DIRECTORY": {
    "description": "Where downloaded files will go.",
-   "value": "./telebot/DOWNLOADS/",
+   "value": "./luciferbot/DOWNLOADS/",
    "required": false
   },
   "APP_ID": {
@@ -32,7 +32,7 @@
    "value": ""
   },
   "STRING_SESSION": {
-   "description": "Get this value by running python3 telesetup.py locally or https://telebot-sessionstring-generator.xditya.repl.run online.",
+   "description": "Get this value by running python3 lucifersetup.py .",
    "value": ""
   },  
   "CUSTOM_PMPERMIT": {
