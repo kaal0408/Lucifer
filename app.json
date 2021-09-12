@@ -32,7 +32,7 @@
    "value": ""
   },
   "STRING_SESSION": {
-   "description": "Get this value by running python3 telesetup.py locally or https://telebot-sessionstring-generator.xditya.repl.run online.",
+   "description": "Get this value by running Lucifer repl get it from @Lucifer_support_group.",
    "value": ""
   },  
   "CUSTOM_PMPERMIT": {
