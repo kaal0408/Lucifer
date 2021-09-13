@@ -8,7 +8,7 @@ from Lucifer import CMD_HELP
 from Lucifer.__init__ import StartTime
 from Lucifer.plugins import ALIVE_NAME, OWNER_ID
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓυcιғεя υsεя"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lucifer user"
 
 
 def get_readable_time(seconds: int) -> str:
@@ -53,7 +53,7 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     await x.edit(
-        f"MY MASTER\nI AM ON\n\n✘ **ριиg** : `{ms}`\n✘ **υρтιмє** : `{uptime}`\n✘ **𝐌𝐘 𝐏𝐄𝐑𝐎 𝐌𝐀𝐒𝐓𝐄𝐑** : [{DEFAULTUSER}](tg://user?id={OWNER_ID})\n\n© 𝙻ucifer 𝚇 𝚄𝚂𝙴𝚁𝙱𝙾𝚃"
+        f"MY MASTER\nI AM ON\n\n✘ **ριиg** : `{ms}`\n✘ **uptime** : `{uptime}`\n✘ **MY MASTER** : [{DEFAULTUSER}](tg://user?id={OWNER_ID})\n\n© 𝙻ucifer 𝚄𝚂𝙴𝚁𝙱𝙾𝚃"
     )
 
 
