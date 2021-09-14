@@ -4,10 +4,8 @@
 import time
 from datetime import datetime
 
-from Lucifer import CMD_HELP
-from Lucifer.__init__ import StartTime
-from Lucifer.plugins import ALIVE_NAME, OWNER_ID
-
+from Lucifer.plugins import OWNER_ID
+from Lucifer import ALIVE_NAME
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lucifer user"
 
 
