@@ -39,7 +39,7 @@ lucifer += f"𝙻𝚈𝙳𝙸𝙰: {lyd}\n"
 lucifer += f"𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁: {sudo}\n"
 lucifer += f"𝙿𝙼 𝚂𝙴𝙲𝚄𝚁𝙸𝚃𝚈: {pm}\n"
 lucifer += f"\n𝚅𝙸𝚂𝙸𝚃 @Lucifer 𝙵𝙾𝚁 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃.\n"
-luciferstats = f"{Lucifer}"
+luciferstats = f"{Lucifer}:@Lucifer_support_group"
 
 Cyrex_NAME = bot.me.first_name
 OWNER_ID = bot.me.id
