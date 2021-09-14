@@ -2,7 +2,7 @@ from telethon.tl.types import Channel
 
 from Lucifer import *
 from Lucifer import ALIVE_NAME, bot, luciferver
-from Lucifer.Config import Config, Var
+from LuciferConfig import Config, Var
 
 # stats
 if Var.PRIVATE_GROUP_ID:
