@@ -32,7 +32,7 @@ else:
 
 LuciferUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lucifer user"
 
-lucifer = f"Lucifer𝚅𝙴𝚁𝚂𝙸𝙾𝙽: {Luciferver}\n"
+lucifer = f"lucifer𝚅𝙴𝚁𝚂𝙸𝙾𝙽: {luciferver}\n"
 lucifer += f"𝙻𝙾𝙶 𝙶𝚁𝙾𝚄𝙿: {log}\n"
 lucifer += f"𝙼𝚈 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙱𝙾𝚃: {bots}\n"
 lucifer += f"𝙻𝚈𝙳𝙸𝙰: {lyd}\n"
