@@ -23,9 +23,11 @@ from math import ceil
 from telethon import Button, custom, events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
-from telebot import ALIVE_NAME, CMD_HELP, CMD_LIST, CUSTOM_PMPERMIT, bot
-from telebot.plugins import telestats
-from telebot.telebotConfig import Var
+from telethon.tl.types import Channel
+
+from Lucifer import *
+from Lucifer import ALIVE_NAME, bot, luciferver
+from Lucifer.LuciferConfig import Config, Var
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 TELEPIC = (
