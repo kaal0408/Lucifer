@@ -56,5 +56,5 @@ async def _(event):
     )
 
 
-CMD_HELP.update({"ping": ".ping\nUse - See the ping stats and uptime of userbot."})
+({"ping": ".ping\nUse - See the ping stats and uptime of userbot."})
 
