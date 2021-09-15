@@ -70,21 +70,21 @@ async def amireallyalive(alive):
         lucifer = f"**Welcome To LuciferBot **\n\n"
         lucifer += f"`{CUSTOM_ALIVE}`\n\n"
         lucifer += (
-            f"{lucifermoji} **Telethon version**: `1.17`\n{lucifermoji} **Python**: `3.8.3`\n"
+            f"{luciferemoji} **Telethon version**: `1.17`\n{lucifermoji} **Python**: `3.8.3`\n"
         )
-        lucifer += f"{lucifermoji} **LuciferBot Version**: `{luciferver}`\n"
-        tele += f"{telemoji} **More Info**: @Lucifer_support_group\n"
-        lucifer += f"{lucifermoji} **Sudo** : `{sudo}`\n"
-        lucifer += f"{lucifermoji} **LuciferBot Uptime**: `{uptime}`\n"
-        lucifer += f"{lucifermoji} **Database Status**: `All OK 👌!`\n"
+        lucifer += f"{luciferemoji} **LuciferBot Version**: `{luciferver}`\n"
+        tele += f"{luciferemoji} **More Info**: @Lucifer_support_group\n"
+        lucifer += f"{luciferemoji} **Sudo** : `{sudo}`\n"
+        lucifer += f"{luciferemoji} **LuciferBot Uptime**: `{uptime}`\n"
+        lucifer += f"{luciferemoji} **Database Status**: `All OK 👌!`\n"
         lucifer += (
-            f"{lucifermoji} **My pro owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
+            f"{luciferemoji} **My pro owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
         )
         lucifer += "    [✨ GitHub Repository ✨](https://github.com/kaal0408/Lucifer"
         await alive.get_chat()
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
-        await borg.send_file(alive.chat_id, ALV_PIC, caption=tele, link_preview=False)
+        await borg.send_file(alive.chat_id, ALV_PIC, caption=lucifer, link_preview=False)
         await alive.delete()
         return
     req = requests.get("https://telegra.ph/file/0670190de8e3bddea6d95.png")
@@ -100,13 +100,13 @@ async def amireallyalive(alive):
             alive.chat_id,
             f"**Welcome To LuciferBot **\n\n"
             f"`{CUSTOM_ALIVE}`\n\n"
-            f"{lucifermoji} **Telethon version**: `1.17`\n{lucifermoji} **Python**: `3.8.3`\n"
-            f"{lucifermoji} **LuciferBot Version**: `{telever}`\n"
-            f"{lucifermoji} **More Info**: @Lucifer_support_group\n"
-            f"{lucifermoji} **Sudo** : `{sudo}`\n"
-            f"{lucifermoji} **TeleBot Uptime**: `{uptime}`\n"
-            f"{lucifermoji} **Database Status**: `All OK 👌!`\n"
-            f"{lucifermoji} **My pro owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
+            f"{luciferemoji} **Telethon version**: `1.17`\n{lucifermoji} **Python**: `3.8.3`\n"
+            f"{luciferemoji} **LuciferBot Version**: `{telever}`\n"
+            f"{luciferemoji} **More Info**: @Lucifer_support_group\n"
+            f"{luciferemoji} **Sudo** : `{sudo}`\n"
+            f"{luciferemoji} **TeleBot Uptime**: `{uptime}`\n"
+            f"{luciferemoji} **Database Status**: `All OK 👌!`\n"
+            f"{luciferemoji} **My pro owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
             "    [✨ GitHub Repository ✨](https://github.com/kaal0408/Lucifer)",
             link_preview=False,
         )
