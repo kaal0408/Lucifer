@@ -41,22 +41,20 @@ def get_readable_time(seconds: int) -> str:
 # @command(pattern="^.ping$")
 
 
-
-bot.on(admin_cmd(pattern="ping$", outgoing=True))
-@bot.on(sudo_cmd(pattern="ping$", allow_sudo=True))
+@Lucifer.on(admin_cmd(pattern="ping$"))
+@Lucifer.on(sudo_cmd(pattern="ping$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
     start = datetime.now()
-    event = await edit_or_reply(event, "__**(❛ ᑭσɳց ❜!__**")
+    x = await eor(event, " ＰＯＮＧ! ")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
-    await event.edit(
-        f"__** PONG! __**\n\n   ⚘ {ms}\n   ⚘ __**My**__ __**Master**__ [{DEFAULTUSER}](tg://user?id={lucifer})"
+    uptime = get_readable_time((time.time() - StartTime))
+    await x.edit(
+        f" **ping** : `{ms}`\n✘ **uptime** : `{uptime}`\n✘ **MY MASTER** : [{DEFAULTUSER}](tg://user?id={OWNER_ID})\n\n© LUCIFER USERBOT"
     )
 
 
-CmdHelp("ping").add_command(
-  "ping", None, "Shows you the ping speed of server"
+CMD_HELP.update({"ping": ".ping\nUse - See the ping stats and uptime of userbot."})
 
- 
