@@ -6,7 +6,7 @@ from datetime import datetime
 import requests
 from uniborg.util import admin_cmd
 
-from telebot import CMD_HELP
+from Lucifer import CMD_HELP
 
 
 @Lucifer.on(admin_cmd(pattern="calendar (.*)"))
