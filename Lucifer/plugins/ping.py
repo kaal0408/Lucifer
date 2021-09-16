@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 
 from Lucifer import CMD_HELP
-from Lucifer import StartTime
+from Lucifer.__init__ import StartTime
 from Lucifer.plugins import OWNER_ID, LUCIFER_NAME
 
 
