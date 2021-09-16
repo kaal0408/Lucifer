@@ -70,7 +70,7 @@ async def amireallyalive(alive):
         lucifer = f"**Welcome To LuciferBot **\n\n"
         lucifer += f"`{CUSTOM_ALIVE}`\n\n"
         lucifer += (
-            f"{luciferemoji} **Telethon version**: `1.17`\n{lucifermoji} **Python**: `3.8.3`\n"
+            f"{luciferemoji} **Telethon version**: `1.17`\n{luciferemoji} **Python**: `3.8.3`\n"
         )
         lucifer += f"{luciferemoji} **LuciferBot Version**: `{luciferver}`\n"
         tele += f"{luciferemoji} **More Info**: @Lucifer_support_group\n"
@@ -87,7 +87,7 @@ async def amireallyalive(alive):
         await borg.send_file(alive.chat_id, ALV_PIC, caption=lucifer, link_preview=False)
         await alive.delete()
         return
-    req = requests.get("https://telegra.ph/file/0670190de8e3bddea6d95.png")
+    req = requests.get("https://telegra.ph/file/73373552e9217e010e853.jpg")
     req.raise_for_status()
     file = BytesIO(req.content)
     file.seek(0)
@@ -101,7 +101,7 @@ async def amireallyalive(alive):
             f"**Welcome To LuciferBot **\n\n"
             f"`{CUSTOM_ALIVE}`\n\n"
             f"{luciferemoji} **Telethon version**: `1.17`\n{lucifermoji} **Python**: `3.8.3`\n"
-            f"{luciferemoji} **LuciferBot Version**: `{telever}`\n"
+            f"{luciferemoji} **LuciferBot Version**: `{luciferver}`\n"
             f"{luciferemoji} **More Info**: @Lucifer_support_group\n"
             f"{luciferemoji} **Sudo** : `{sudo}`\n"
             f"{luciferemoji} **TeleBot Uptime**: `{uptime}`\n"
