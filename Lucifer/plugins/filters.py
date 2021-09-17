@@ -19,7 +19,7 @@ from Lucifer.plugins.sql_helper.filter_sql import (
     remove_all_filters,
     remove_filter,
 )
-from telebot.utils import admin_cmd
+from Lucifer.utils import admin_cmd
 
 DELETE_TIMEOUT = 0
 TYPE_TEXT = 0
