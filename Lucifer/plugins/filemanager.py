@@ -29,7 +29,7 @@ async def lst(event):
     if not exists(path):
         await eor(
             event,
-            f"There is no such directory or file with the name `{tele}` check again!",
+            f"There is no such directory or file with the name `{lucifer}` check again!",
         )
         return
     if isdir(path):
