@@ -1,7 +1,7 @@
 import pyfiglet
 
 from Lucifer import CMD_HELP
-from telebot.utils import admin_cmd
+from Lucifer.utils import admin_cmd
 
 
 @Lucifer.on(admin_cmd(pattern="figlet ?(.*)", outgoing=True))
