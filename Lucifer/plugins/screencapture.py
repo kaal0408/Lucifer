@@ -5,12 +5,12 @@ import io
 
 import requests
 
-from telebot import CMD_HELP
-from telebot.utils import admin_cmd
+from Lucifer import CMD_HELP
+from Lucifer.utils import admin_cmd
 
 
-@telebot.on(admin_cmd(pattern="screencapture (.*)"))
-@telebot.on(sudo_cmd(pattern="screencapture (.*)", allow_sudo=True))
+@Lucifer.on(admin_cmd(pattern="screencapture (.*)"))
+@Lucifer.on(sudo_cmd(pattern="screencapture (.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
