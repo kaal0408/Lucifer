@@ -26,10 +26,10 @@ from Lucifer import ALIVE_NAME, CMD_HELP, CUSTOM_PMPERMIT, bot
 from Lucifer.utils import admin_cmd
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
-TELEPIC = (
+LUCIFERPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/92cfbab6598148837c2e4.jpg"
+    else "https://telegra.ph/file/9cd3f737d439de8da8b7b.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
