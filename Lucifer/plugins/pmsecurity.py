@@ -197,7 +197,7 @@ async def on_new_private_message(event):
 
         return
 
-    if sender.bot:
+    if sender.bot: ==True
 
         # don't log bots
 
