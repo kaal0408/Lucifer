@@ -20,8 +20,7 @@ CUSTOM_ALIVE = (
     if Var.CUSTOM_ALIVE
     else "**Your LuciferX in working.**"
 )
-ALV_PIC = Var.ALIVE_PIC if Var.ALIVE_PIC
-    else "https://telegra.ph/file/73373552e9217e010e853.jpg"
+ALV_PIC = Var.ALIVE_PIC if Var.ALIVE_PIC else "https://telegra.ph/file/73373552e9217e010e853.jpg"
 )
 
 if Config.SUDO_USERS:
