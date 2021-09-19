@@ -197,13 +197,13 @@ async def on_new_private_message(event):
 
         return
 
-    if sender.bot: ==True
+    if sender.bot: == True
 
         # don't log bots
 
         return
 
-    if sender.verified:
+    if sender.verified: ==True
 
         # don't log verified accounts
 
