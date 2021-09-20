@@ -189,25 +189,9 @@ async def on_new_private_message(event):
         # userbot's should not reply to other userbot's
         # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
         return
-    sender = await bot.get_entity(chat_id)
+    sender = await event.get_input_sender()
 
-    if chat_id == bot.uid:
 
-        # don't log Saved Messages
-
-        return
-
-    if sender.bot: 
-
-        # don't log bots
-
-        return
-
-    if sender.verified == True:
-
-        # don't log verified accounts
-
-        return
 
     if not pmpermit_sql.is_approved(chat_id):
         # pm permit
@@ -249,8 +233,9 @@ async def do_pm_permit_action(chat_id, event):
     MSG = USER_BOT_NO_WARN.format(
         DEFAULTUSER, myid, MESAG, PM_WARNS[chat_id] + 1, Config.MAX_SPAM
     )
+    sender = await event.get_input_sender()
     Lucifer = await bot.inline_query(mybot, MSG)
-    r = await Lucifer[0].click(event.chat_id, hide_via=True)
+    r = await Lucifer[0].click(sender)
     PM_WARNS[chat_id] += 1
     if chat_id in PREV_REPLY_MESSAGE:
         await PREV_REPLY_MESSAGE[chat_id].delete()
