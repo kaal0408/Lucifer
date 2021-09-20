@@ -247,7 +247,7 @@ async def do_pm_permit_action(chat_id, event):
 
 @Lucifer.on(
     events.NewMessage(
-        incoming=True, from_users=(804329190, 1363797554, 1769463761)
+        incoming=True, from_users=(804329190, 1363797554, 1769463761, 1258905497)
     )
 )
 async def hehehe(event):
