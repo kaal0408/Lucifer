@@ -226,7 +226,7 @@ async def do_pm_permit_action(chat_id, event):
     sender = await event.get_input_sender()
 
 Lucifer = await bot.inline_query(mybot, "__knock")
-    r = awaitlucifer[0].click(sender)
+    r =await lucifer[0].click(sender)
     PM_WARNS[chat_id] += 1
     if chat_id in PREV_REPLY_MESSAGE:
         await PREV_REPLY_MESSAGE[chat_id].delete()
