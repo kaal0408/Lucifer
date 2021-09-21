@@ -225,7 +225,7 @@ async def do_pm_permit_action(chat_id, event):
 
     sender = await event.get_input_sender()
 
-astro = await bot.inline_query(mybot, "__knock")
+Lucifer = await bot.inline_query(mybot, "__knock")
     r = await astro[0].click(sender)
     PM_WARNS[chat_id] += 1
     if chat_id in PREV_REPLY_MESSAGE:
