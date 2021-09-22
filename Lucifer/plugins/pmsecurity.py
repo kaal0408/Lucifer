@@ -14,7 +14,7 @@ import Lucifer.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from Lucifer import CMD_HELP, CUSTOM_PMPERMIT, bot, luciferver
 from Lucifer.utils import admin_cmd
 
-NAME = Config.NAME
+NAME = LuciferConfig.NAME
 PM_PIC = os.environ.get("PM_PIC", None)
 LUCIFER_PIC = (
     PM_PIC
