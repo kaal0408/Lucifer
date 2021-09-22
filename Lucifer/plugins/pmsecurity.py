@@ -13,7 +13,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 import Lucifer.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from Lucifer import CMD_HELP, CUSTOM_PMPERMIT, bot
 from Lucifer.utils import admin_cmd
-from Lucifer.config import Config
+from Lucifer.Luciferconfig import Config
 
 NAME = Config.NAME
 PM_PIC = os.environ.get("PM_PIC", None)
