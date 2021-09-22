@@ -11,7 +11,7 @@ from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
 import Lucifer.plugins.sql_helper.pmpermit_sql as pmpermit_sql
-from Lucifer import CMD_HELP, CUSTOM_PMPERMIT, bot
+from Lucifer import CMD_HELP, CUSTOM_PMPERMIT, bot luciferver
 from Lucifer.utils import admin_cmd
 from Lucifer.Luciferconfig import Config, var
 
