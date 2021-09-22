@@ -230,7 +230,7 @@ r = await lucifer[0].click(sender)
 PM_WARNS[chat_id] += 1
 if chat_id in PREV_REPLY_MESSAGE:
         await PREV_REPLY_MESSAGE[chat_id].delete()
-    PREV_REPLY_MESSAGE[chat_id] = r
+PREV_REPLY_MESSAGE[chat_id] = r
 
 
 # Do not touch the below codes!
