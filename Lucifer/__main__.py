@@ -7,7 +7,7 @@ import telethon.utils
 from telethon import TelegramClient
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 
-from Lucifer import LOGS, bot, TGbot
+from Lucifer import LOGS, bot, luciferver
 from Lucifer.config import Config
 from Lucifer.utils import load_module
 from Lucifer.version import lucifer as luciferver
