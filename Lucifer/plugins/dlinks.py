@@ -17,8 +17,8 @@ import requests
 from bs4 import BeautifulSoup
 from humanize import naturalsize
 
-from telebot import CMD_HELP
-from telebot.utils import admin_cmd
+from Lucifer import CMD_HELP
+from Lucifer.utils import admin_cmd
 
 
 def subprocess_run(cmd):
@@ -44,8 +44,8 @@ def subprocess_run(cmd):
     return talk
 
 
-@telebot.on(admin_cmd(outgoing=True, pattern=r"direct(?: |$)([\s\S]*)"))
-@telebot.on(sudo_cmd(allow_sudo=True, pattern=r"direct(?: |$)([\s\S]*)"))
+@Lucifer.on(admin_cmd(outgoing=True, pattern=r"direct(?: |$)([\s\S]*)"))
+@Lucifer.on(sudo_cmd(allow_sudo=True, pattern=r"direct(?: |$)([\s\S]*)"))
 async def direct_link_generator(request):
     """ direct links generator """
     await eor(request, "`Processing...`")
