@@ -31,7 +31,7 @@ if len(sys.argv) not in (1, 3, 4):
 else:
     bot.tgbot = None
     try:
-        if Config.BOT_USERNAME is not None:
+        if var.TG_BOT_USER_NAME_BF_HER is not None:
             LOGS.info("Checking Telegram Bot Username...")
             bot.tgbot = TelegramClient(
                 "TG_BOT_TOKEN_BF_HER", api_id=LuciferConfig.APP_ID, api_hash=LuciferConfig.API_HASH
