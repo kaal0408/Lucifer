@@ -68,7 +68,7 @@ async def get_user_from_id(user, event):
 
 @Lucifer.on(ChatAction)
 async def handler(lucifer):
-    if Lucifer.user_joined or Lucifer.user_added:
+    if lucifer.user_joined or lucifer.user_added:
         try:
             from Lucifer.plugins.sql_helper.gmute_sql import is_gmuted
 
