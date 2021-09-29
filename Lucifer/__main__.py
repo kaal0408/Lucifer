@@ -31,7 +31,7 @@ async def startup_log_all_done():
         print("Either PRIVATE_GROUP_ID is wrong or you have left the group.")
 
 # Luciferbot starter...
-if len(argv) not in (1, 3, 4):
+if len(argv*) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.tgbot = None
