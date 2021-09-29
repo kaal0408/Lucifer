@@ -14,15 +14,15 @@ from pathlib import Path
 import telethon.utils
 from Lucifer import CMD_HNDLR
 
+LUCIFER = Var.PRIVATE_GROUP_ID
+BOTNAME = Var.TG_BOT_USER_NAME_BF_HER
+LOAD_MYBOT = Var.LOAD_MYBOT
+
 # let's get the bot ready
-async def Lucifer_bot(bot_token):
-    try:
-        await bot.start(bot_token)
-        bot.me = await bot.get_me()
-        bot.uid = telethon.utils.get_peer_id(bot.me)
-    except Exception as e:
-        LOGS.error(f"LUCIFERBOT_SESSION - {str(e)}")
-        sys.exit()
+async def add_bot(bot_token):
+    await bot.start(bot_token)
+    bot.me = await bot.get_me()
+    bot.uid = telethon.utils.get_peer_id(bot.me)
 
 
 # Luciferbot starter...
