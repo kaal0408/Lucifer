@@ -48,7 +48,7 @@ else:
     except BaseException:
        pass
 
-if len(sys.argv) not in (1, 3, 4):
+if len(join.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.tgbot = None
