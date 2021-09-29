@@ -1,6 +1,7 @@
 import glob
 import os
 import sys
+from sys import argv
 from pathlib import Path
 
 import telethon.utils
