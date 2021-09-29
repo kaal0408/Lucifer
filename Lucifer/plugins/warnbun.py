@@ -1,7 +1,7 @@
 """.admin Plugin for @UniBorg"""
 from telethon.tl.types import ChannelParticipantsAdmins
 
-from telebot.utils import admin_cmd
+from Lucifer.utils import admin_cmd
 
 
 @Lucifer.on(admin_cmd(pattern="warn1"))
