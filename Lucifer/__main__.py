@@ -60,6 +60,27 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 
+if LOAD_MYBOT == "True":
+    path = "Lucifer/plugins/mybot/pmbot/*.py"
+    files = glob.glob(path)
+    for name in files:
+        with open(name) as f:
+            path1 = Path(f.name)
+            shortname = path1.stem
+            load_pmbot(shortname.replace(".py", ""))
+    print("TGBot set up completely!")
+
+print("TGBot set up - Level - Basic")
+print(
+    """
+                ----------------------------------------------------------------------
+                    Lucifer X 2.0 ʜᴀs ʙᴇᴇɴ ᴅᴇᴘʟᴏʏᴇᴅ, ᴅᴏ ᴠɪsɪᴛ @Lucifer_support_group !!
+                    Lucifer ᴠᴇʀ: V2.2
+                    ©Tᴇᴀᴍ ʟucifer
+                ----------------------------------------------------------------------
+"""
+)
+
 # that's life...
 async def lucifer_is_on():
     try:
