@@ -54,16 +54,6 @@ else:
 #             shortname = path2.stem
 #             load_module(shortname.replace(".py", ""))
 
-# Extra Modules...
-# extra_repo = Config.EXTRA_REPO or "https://github.com/kaal0408/Lucifer"
-# if Config.EXTRA == "True":
-#     try:
-#         os.system(f"git clone {extra_repo}")
-#     except BaseException:
-#         pass
-#     LOGS.info("Installing Extra Plugins")
-
-
 # let the party begin...
 LOGS.info("Starting Bot Mode !")
 tbot.start()
