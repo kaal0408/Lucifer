@@ -48,11 +48,6 @@ else:
     except BaseException:
        pass
 
-if len(join.argv) not in (1, 3, 4):
-    bot.disconnect()
-else:
-    bot.tgbot = None
-    bot.run_until_disconnected()
 path = 'Lucifer/plugins/*.py'
 
 files = glob.glob(path)
