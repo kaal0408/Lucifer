@@ -42,9 +42,6 @@ else:
             LOGS.info("🔥 LuciferBot Startup Completed 🔥")
         else:
             bot.start()
-    except Exception as e:
-        LOGS.error(f"TG_BOT_TOKEN_BF_HER   - {str(e)}")
-        sys.exit()
 
 # imports plugins...
 path = "Lucifer/plugins/*.py"
