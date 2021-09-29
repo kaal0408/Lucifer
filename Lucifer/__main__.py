@@ -44,13 +44,13 @@ else:
             bot.start()
 
 # imports plugins...
-path = "Lucifer/plugins/*.py"
-files = glob.glob(path)
-for name in files:
-    with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", ""))
+#path = "Lucifer/plugins/*.py"
+#files = glob.glob(path)
+#for name in files:
+#         with open(name) as ex:
+#             path2 = Path(ex.name)
+#             shortname = path2.stem
+#             load_module(shortname.replace(".py", ""))
 
 # Extra Modules...
 # extra_repo = Config.EXTRA_REPO or "https://github.com/kaal0408/Lucifer"
@@ -60,13 +60,6 @@ for name in files:
 #     except BaseException:
 #         pass
 #     LOGS.info("Installing Extra Plugins")
-#     path = "Lucifer/plugins/*.py"
-#     files = glob.glob(path)
-#     for name in files:
-#         with open(name) as ex:
-#             path2 = Path(ex.name)
-#             shortname = path2.stem
-#             load_module(shortname.replace(".py", ""))
 
 
 # let the party begin...
