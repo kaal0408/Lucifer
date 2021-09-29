@@ -35,10 +35,10 @@ else:
             LOGS.info("Checking Telegram Bot Username...")
             bot.tgbot = TelegramClient(
                 "BOT_TOKEN", api_id=Config.APP_ID, api_hash=Config.API_HASH
-            ).start(bot_token=Config.BOT_TOKEN)
+            ).start(bot_token=Config.TG_BOT_TOKEN_BF_HER)
             LOGS.info("Checking Completed. Proceeding to next step...")
             LOGS.info("🔰 Starting LuciferBot 🔰")
-            bot.loop.run_until_complete(lucifer_bot(Config.BOT_USERNAME))
+            bot.loop.run_until_complete(lucifer_bot(Config.TG_BOT_USER_NAME_BF_HER))
             LOGS.info("🔥 LuciferBot Startup Completed 🔥")
         else:
             bot.start()
