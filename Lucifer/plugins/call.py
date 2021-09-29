@@ -14,7 +14,7 @@ import asyncio
 
 from Lucifer import CMD_HELP
 from Lucifer.utils import admin_cmd
-
+from Lucifer.LuciferConfig import Config, Var
 
 @Lucifer.on(admin_cmd(pattern=r"(.*)", outgoing=True))
 async def _(event):
