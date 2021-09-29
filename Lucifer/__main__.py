@@ -59,10 +59,10 @@ for name in files:
 
 print("Lucifer has been deployed! ")
 # Join HellBot Channel after deploying 🤐😅
-try:
-    await bot(JoinChannelRequest("@LuciferXupdates"))
-   except BaseException:
-      pass
+ try:
+     await bot(JoinChannelRequest("@LuciferXupdates"))
+    except BaseException:
+       pass
 
 # Why not come here and chat??
 # try:
