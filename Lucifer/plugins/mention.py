@@ -3,7 +3,7 @@
 # (c) @INF1N17Y
 
 from Lucifer import CMD_HELP
-
+from Lucifer.LuciferConfig import Config, Var
 
 @Lucifer.on(admin_cmd(pattern=r"mention (.*)"))
 @Lucifer.on(sudo_cmd(pattern=r"mention (.*)", allow_sudo=True))
