@@ -58,7 +58,26 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 print("Lucifer has been deployed! ")
+# Join HellBot Channel after deploying 🤐😅
+    try:
+        await bot(JoinChannelRequest("@LuciferXupdates"))
+    except BaseException:
+        pass
 
+# Why not come here and chat??
+#    try:
+#        await bot(JoinChannelRequest("@Lucifer_support_group"))
+#    except BaseException:
+#        pass
+
+
+bot.loop.create_task(lucifer_is_on())
+
+if len(sys.argv) not in (1, 3, 4):
+    bot.disconnect()
+else:
+    bot.tgbot = None
+    bot.run_until_disconnected
 print("Setting up TGBot")
 path = "Lucifer/plugins/mybot/*.py"
 files = glob.glob(path)
