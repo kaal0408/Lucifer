@@ -62,7 +62,7 @@ for name in files:
 
 # let the party begin...
 LOGS.info("Starting Bot Mode !")
-tbot.start()
+TGBot.start()
 LOGS.info("⚡ Your LuciferBot Is Now Working ⚡")
 LOGS.info(
     "Head to @LuciferXupdates for Updates. Also join chat group to get help regarding to LuciferBot."
