@@ -43,7 +43,7 @@ else:
         else:
             bot.start()
     except Exception as e:
-        LOGS.error(f"BOT_TOKEN - {str(e)}")
+        LOGS.error(f"TG_BOT_TOKEN_BF_HER   - {str(e)}")
         sys.exit()
 
 # imports plugins...
