@@ -60,14 +60,6 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 
-# let the party begin...
-LOGS.info("Starting Bot Mode !")
-Lucifer.start()
-LOGS.info("⚡ Your LuciferBot Is Now Working ⚡")
-LOGS.info(
-    "Head to @LuciferXupdates for Updates. Also join chat group to get help regarding to LuciferBot."
-)
-
 # that's life...
 async def lucifer_is_on():
     try:
