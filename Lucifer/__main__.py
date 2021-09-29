@@ -9,8 +9,8 @@ from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRe
 
 from Lucifer import LOGS, bot, luciferver
 from Lucifer.LuciferConfig import Var
-from Lucifer.utils import load_module
-from Lucifer.version import lucifer as luciferver
+from Lucifer.utils import load_module,start_mybot, load_pmbot
+from pathlib import Path
 hl = Config.HANDLER
 HELL_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
 
