@@ -45,9 +45,9 @@ else:
         bot.start()
 # Join HellBot Channel after deploying 🤐😅
     try:
-        await bot(JoinChannelRequest("@LuciferXupdates"))
-    except BaseException:
-        pass
+       await bot(JoinChannelRequest("@LuciferXupdates"))
+   except BaseException:
+       pass
 
 # Why not come here and chat??
 #    try:
