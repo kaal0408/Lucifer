@@ -11,8 +11,9 @@ from Lucifer import LOGS, bot, luciferver
 from Lucifer.LuciferConfig import Var
 from Lucifer.utils import load_module,start_mybot, load_pmbot
 from pathlib import Path
-hl = Config.HANDLER
-HELL_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+import telethon.utils
+from Lucifer import CMD_HNDLR
+LUCIFER_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
 
 # let's get the bot ready
 async def Lucifer_bot(bot_token):
