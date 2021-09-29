@@ -30,18 +30,20 @@ if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.tgbot = None
-    try:
-        if var.TG_BOT_USER_NAME_BF_HER is not None:
-            LOGS.info("Checking Telegram Bot Username...")
-            bot.tgbot = TelegramClient(
-                "TG_BOT_TOKEN_BF_HER", api_id=LuciferConfig.APP_ID, api_hash=LuciferConfig.API_HASH
-            ).start(bot_token=Config.TG_BOT_TOKEN_BF_HER)
-            LOGS.info("Checking Completed. Proceeding to next step...")
-            LOGS.info("🔰 Starting LuciferBot 🔰")
-            bot.loop.run_until_complete(lucifer_bot(Config.TG_BOT_USER_NAME_BF_HER))
-            LOGS.info("🔥 LuciferBot Startup Completed 🔥")
-        else:
-            bot.start()
+    if var.TG_BOT_USER_NAME_BF_HER is not None:
+           print("Initiating Inline Bot")
+        # ForTheGreatrerGood of beautification
+        bot.tgbot = TelegramClient(
+            "TG_BOT_TOKEN",
+            api_id=Var.APP_ID,
+            api_hash=Var.API_HASH
+        ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
+        print("Initialisation finished with no errors")
+        print("Starting Userbot")
+        bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
+        print("Startup Completed")
+    else:
+        bot.start() 
 
 # imports plugins...
 #path = "Lucifer/plugins/*.py"
