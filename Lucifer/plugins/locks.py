@@ -138,7 +138,7 @@ async def _(event):
 
 
 @Lucifer.on(events.MessageEdited())  # pylint:disable=E0602
-@Lucifet.on(events.NewMessage())  # pylint:disable=E0602
+@Lucifer.on(events.NewMessage())  # pylint:disable=E0602
 async def check_incoming_messages(event):
     # TODO: exempt admins from locks
     peer_id = event.chat_id
