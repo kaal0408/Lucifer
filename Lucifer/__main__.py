@@ -49,7 +49,7 @@ else:
        pass
 
 
-bot.loop.create_task(Lucifer_is_on())
+bot.loop.create_task(lucifer_is_on())
 
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
