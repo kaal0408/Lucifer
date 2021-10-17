@@ -1,25 +1,19 @@
-
 import asyncio
 import io
 import os
-import time
 
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
-from Lucifer import ALIVE_NAME, CUSTOM_PMPERMIT
-from Lucifer.CMD_HELP import CMD_HELP
-from Lucifer.LuciferConfig import Config
-from Lucifer.plugins.sql_helper import pmpermit_sql as pmpermit_sql
+import Lucifer.plugins.sql_helper.pmpermit_sql as pmpermit_sql
+from Lucifer import ALIVE_NAME, CMD_HELP, CUSTOM_PMPERMIT, bot
 from Lucifer.utils import admin_cmd
 
-PM_TRUE_FALSE = Config.PM_DATA
-
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
-LUCIFERPIC = (
+TELEPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/cee753391111580ae8a0c.jpg"
+    else "https://telegra.ph/file/73373552e9217e010e853.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
