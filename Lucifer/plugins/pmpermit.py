@@ -305,18 +305,12 @@ async def hehehe(event):
             await borg.send_message(chat, "**Here comes my Master! Lucky you!!😏**")
 
 
-CMD_HELP.("pmpermit").add_command(
-    "allow|.a", "<pm use only>", "It allow the user to PM you."
-).add_command(
-    "disallow|.da",
-    "<pm use only>",
-    "It disallows the user to PM. If user crosses the PM limit after disallow he/she will get blocked automatically",
-).add_command(
-    "block", "<pm use only>", "You know what it does.... Blocks the user"
-).add_command(
-    "listallowed|.la", None, "Gives you the list of allowed PM's list"
-).add_command(
-    "set var PM_DATA",
-    "DISABLE",
-    "Turn off pm protection by your userbot. Your PM will not be protected.",
-).add()
+CMD_HELP.update(
+    {
+        "pmsecurity": ".approve/.a\nUse - Approve PM\
+        \n\n.disapprove/.da\nUse - DisApprove PM\
+        \n\n.listapproved\nUse - Get all approved PMs.\
+        \n\nSet var PMPERMIT_PIC for custom PMPic, CUSTOM_PMPERMIT for custom text, PMSECURITY <on/off> to enable/disable, INSTANT_BLOCK <on/off>.\
+        \nGet help from @Lucifer_support_group."
+    }
+)
