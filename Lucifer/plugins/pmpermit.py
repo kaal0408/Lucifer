@@ -8,7 +8,7 @@ from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
 from Lucifer import ALIVE_NAME, CUSTOM_PMPERMIT
-from Lucifer.cmdhelp import CmdHelp
+from Lucifer.CMD_HELP import CMD_HELP
 from Lucifer.LuciferConfig import Config
 from Lucifer.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from Lucifer.utils import admin_cmd
