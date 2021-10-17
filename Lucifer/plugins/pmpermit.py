@@ -305,7 +305,7 @@ async def hehehe(event):
             await borg.send_message(chat, "**Here comes my Master! Lucky you!!😏**")
 
 
-CmdHelp("pmpermit").add_command(
+CMD_HELP.("pmpermit").add_command(
     "allow|.a", "<pm use only>", "It allow the user to PM you."
 ).add_command(
     "disallow|.da",
