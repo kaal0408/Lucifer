@@ -67,7 +67,8 @@ def user_full_name(user):
     return full_name
 
 
-@Lucifer.on(admin_cmd(pattern=r"allinvite ?(.*)"))
+@Lucifer.on(admin_cmd(pattern=r"inviteall ?(.*)"))
+@Lucifer.on(sudo_cmd(pattern="inviteall ?(.*)", allow_sudo=True))
 async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
