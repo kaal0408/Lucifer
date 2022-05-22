@@ -13,7 +13,7 @@ from Lucifer.plugins.sql_helper.broad_sql import (
     rm_channel,
 )
 
-logs_id = Lucifer.LuciferConfig.PRIVATE_GROUP_ID
+logs_id = os.environ.get("PRIVATE_GROUP_ID", None)
 
 # Keep all credits pls, made with great effort by @HeisenbergTheDanger
 
