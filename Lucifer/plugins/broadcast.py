@@ -1,7 +1,7 @@
 # Written by @HeisenbergTheDanger (Keep credits else gay)
 
 import asyncio
-
+import os
 from telethon.tl.types import InputMediaUploadedPhoto
 from Lucifer.utils import admin_cmd
 
