@@ -3,10 +3,10 @@
 import asyncio
 
 from telethon.tl.types import InputMediaUploadedPhoto
-from astro.utils import admin_cmd
+from Lucifer.utils import admin_cmd
 
-from astro import CMD_HELP
-from astro.plugins.sql.broad_sql import (
+from Lucifer import CMD_HELP
+from Lucifer.plugins.sql_helper.broad_sql import (
     add_channel,
     get_all_channels,
     in_channels,
@@ -30,8 +30,8 @@ async def pinit(chat, msgid):
         return False
 
 
-@astro.on(admin_cmd(pattern="forward ?(.*)"))
-@astro.on(sudo_cmd(pattern="forward ?(.*)", allow_sudo=True))
+@Lucifer.on(admin_cmd(pattern="forward ?(.*)"))
+@Lucifer.on(sudo_cmd(pattern="forward ?(.*)", allow_sudo=True))
 async def forw(event):
     if event.fwd_from:
         return
@@ -83,8 +83,8 @@ async def forw(event):
             await mssg.edit("Set up log channel for checking errors.")
 
 
-@astro.on(admin_cmd(pattern="broadcast ?(.*)"))
-@astro.on(sudo_cmd(pattern="broadcast ?(.*)", allow_sudo=True))
+@Lucifer.on(admin_cmd(pattern="broadcast ?(.*)"))
+@Lucifer.on(sudo_cmd(pattern="broadcast ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -206,7 +206,7 @@ async def _(event):
 # Written by @HeisenbergTheDanger
 
 
-@astro.on(admin_cmd(pattern="add ?(.*)"))
+@Lucifer.on(admin_cmd(pattern="add ?(.*)"))
 async def add_ch(event):
     if event.fwd_from:
         return
@@ -247,7 +247,7 @@ async def add_ch(event):
         await event.delete()
 
 
-@astro.on(admin_cmd(pattern="rm ?(.*)"))
+@Lucifer.on(admin_cmd(pattern="rm ?(.*)"))
 async def remove_ch(event):
     if event.fwd_from:
         return
@@ -275,8 +275,8 @@ async def remove_ch(event):
         await event.delete()
 
 
-@astro.on(admin_cmd(pattern="listchannels"))
-@astro.on(sudo_cmd(pattern="listchannels", allow_sudo=True))
+@Lucifer.on(admin_cmd(pattern="listchannels"))
+@Lucifer.on(sudo_cmd(pattern="listchannels", allow_sudo=True))
 async def list(event):
     if event.fwd_from:
         return
@@ -301,8 +301,8 @@ async def list(event):
         await eor(event, msg)
 
 
-@astro.on(admin_cmd(pattern="search ?(.*)"))
-@astro.on(sudo_cmd(pattern="search ?(.*)", allow_sudo=True))
+@Lucifer.on(admin_cmd(pattern="search ?(.*)"))
+@Lucifer.on(sudo_cmd(pattern="search ?(.*)", allow_sudo=True))
 async def search(event):
     channel_id = event.pattern_match.group(1)
     try:
